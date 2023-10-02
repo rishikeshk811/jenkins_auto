@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- id is unique ,so we can target one id at a time for 
+    styling , -->
+    <!-- <h1 id="heading">HTML</h1>
+    <h1>CSS </h1>   
+    <h1 id="heading1">JAVA Script</h1> -->
+    <h1>1>Select Scripting language</h1>
+    <input type="radio" name="r1" id="input1">JAVA
+    <br><br>
+    <input type="radio" name="r1" id="input2">HTML
+    <br><br>
+    <input type="radio" name="r1" id="input3">CSS
+    <br><br>
+    <input type="radio" name="r1" id="input4">JS
+    <br><br>
+    <button onclick="vali()">submit</button>
+    <script>
+        function vali(){
+ var x1=document.getElementById("input1")
+ var x2=document.getElementById("input2")
+ var x3=document.getElementById("input3")
+ var x4=document.getElementById("input4")
+//  check is inbuilt property capable of giving boolean value 
+if(x1.checked==true){
+    alert("Answer selected is JAVA")
+}
+else if(x2.checked==true){
+    alert("Answer selected is JAVA")
+}
+if(x1.checked==true){
+    alert("Answer selected is HTML")
+}
+else if(x3.checked==true){
+    alert("Answer selected is CSS")
+}
+else if(x4.checked==true){
+    alert("Answer selected is JS")
+}
+else{
+    alert("No answer is selected")
+    
+}
+
+}
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: beige;
+        }
+        #myinput{
+            width: 100%;
+        }
+        #mytable{
+           width: 100%;
+           background-color: azure;
+            border: 2px solid rgb(18, 14, 14);
+            margin: auto;
+        }
+        th{ width: 500px;
+           text-align: center;
+            background-color: rgb(247, 143, 143);
+            color: blue;
+            padding: 10px;
+        }
+        tr td{
+            color: red;
+            width: 500px;
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="myinput" onkeyup="display()" >
+    <br><br>
+    <table id="mytable">
+   <tr>
+<th>name</th>
+<th>Degree</th>
+<th>Profession</th>
+   </tr>
+   <tr>
+    <td>Arun</td>
+    <td>MCA</td>
+    <td>frontend developer</td>
+   </tr>
+   <tr> <td>Rahul</td>
+    <td>BE</td>
+    <td>Backend developer</td></tr>
+   <tr> <td>Deepika</td>
+    <td>Mechanical</td>
+    <td>Test Engineer</td></tr>
+   <tr> <td>Mukesh</td>
+    <td>Msc</td>
+    <td>Full stack developer</td></tr>
+    </table>
+    <!-- toUpperCase and toLowerCase is a inbuilt funciton which convert all data in 
+    uppercase and lowercase   -->
+    <script>
+         function display(){
+            filter=document.getElementById("myinput").value.toUpperCase()
+            table =document.getElementById("mytable")
+            tablerow=document.getElementsByTagName('tr')
+            for (let i = 1; i <tablerow.length; i++) {
+                tabledata=tablerow[i].getElementsByTagName('td')[0]
+                if(tabledata)
+                
+            }
+         }
+    </script>
+</body>
+</html>

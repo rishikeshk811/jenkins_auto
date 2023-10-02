@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>FROM</title>
+    <style>
+        form {border: 2px solid black;
+        width: 50%;
+    padding: 40px;
+margin: auto;}
+span {color: red;}
+
+        
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <label for="">FIRST NAME :</label>
+        <span>*</span>
+        <input type="text" required>
+        <br><br>
+        <label for="">LAST NAME :</label>
+        <span>*</span>
+        <input type="text" required>
+        <br><br>
+        <label for="">EMAIL ID :</label>
+        <span>*</span>
+        <input type="text" required>
+        <br><br>
+        <!-- <label for="">GENDER :</label>
+        <input type="radio">
+        <label for="">MALE  </label>
+        <input type="radio">
+        <label for="">FEMALE  </label>
+        <input type="radio">
+        <label for="">OTHERS</label> -->
+        <label for="gender">GENDER :</label>
+        <input type="radio" name="gender">  MALE
+        <input type="radio" name="gender">  FEMALE
+        <input type="radio" name="gender">  OTHERS
+        <br><br>
+         <!-- <label for="">SUBJECT :</label>
+         <input type="checkbox">
+         <label for="">WEB </label>
+         <input type="checkbox">
+         <label for="">SQL </label>
+         <input type="checkbox">
+         <label for="">JAVA </label> -->
+         <label for="">SUBJECT :</label>
+          <input type="checkbox">  WEB 
+          <input type="checkbox">  MANUAL 
+          <input type="checkbox">  SQL 
+          <input type="checkbox">  JAVA 
+          <input type="checkbox">   PYTHON
+
+         <br><br>
+         <label for="">DATE OF BIRTH :</label>
+         <input type="date">
+         <br><br>
+         <label for="">RESUME :</label>
+         <input type="file">
+         <br><br>
+         <label for="">YEAR OF PASSOUT :</label>
+         <input type="number" min="2000" max="2023">
+         <br><br>
+         <label for="">ADDRESS :</label>
+         <textarea name="" id="" cols="30" rows="10"></textarea>
+         <br><br>
+         <label for="">QUALIFICATION :</label>
+         <select name="" id="">
+            <option value="">BTECH</option>
+            <option value="">ME</option>
+            <option value="">MTECH</option>
+            <option value="">BSC</option>
+            <option value="">BCA</option>
+        </select>
+        <br><br>
+        <label for="">PASSWORD :</label>
+        <input type="password">
+        <br><br>
+         <center><button>SUBMIT</button></center>
+    </form>
+</body>
+</html>

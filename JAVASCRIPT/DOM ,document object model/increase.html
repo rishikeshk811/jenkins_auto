@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border:2px solid black;
+            width: 50%;
+            background-color: darkgoldenrod;
+            margin: auto;
+            margin-block: 40px;
+            padding: 10px;
+            text-align: center;
+        }
+        h1{
+            border:2px double red;
+            font-style: italic;
+            background-color: rgb(47, 239, 175);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="heading"></h1>
+        <button onclick="inc()">increase</button>
+        <button onclick="dec()">decrease</button>
+        <button onclick="rst()">reset</button>
+    </div>
+    <script>
+        count=0;
+        function inc(){
+       count=count+1;
+       document.getElementById("heading").innerHTML=count
+        }
+        function rst(){
+            count=0;
+            document.getElementById("heading").innerHTML=count
+  
+        }
+function dec(){
+    count=count-1
+    document.getElementById("heading").innerHTML=count
+
+}
+    </script>
+</body>
+</html>

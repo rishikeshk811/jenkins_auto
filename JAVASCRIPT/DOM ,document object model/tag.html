@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML</h1>
+    <h1>CSS</h1>
+    <h1>JS</h1>
+    <h1>REACT JS</h1>
+    <button onclick="abc()" ondblclick="dbl()">red color</button>
+    <!-- onclick and doubleclick are inbuilt function in Window object  -->
+    <button onclick="clr()">reset</button>
+    <!--the drawback of css is ,once will the write the property ,it will
+    show on the html ,we hv no control on style ,so we use javascript
+ in js if we click then so,its property -->
+    <script>
+        function abc(){
+var tag=document.getElementsByTagName("h1")
+//  tag[0].style.color="red"
+// tag[1].style.color="red"
+// tag[2].style.color="red"
+// tag[3].style.color="red"
+for (let i = 0; i < tag.length; i++) {
+    tag[i].style.color="red"
+    
+}
+        }
+    function clr()    
+    {  //location --Object,inside it reload function ,location is inside window Object
+        location.reload()
+    }
+function dbl()  {
+    var x=document.getElementsByTagName("h1")
+    for (let i = 0; i < x.length; i++) {
+        
+        x[i].style.border="2px solid green"
+        x[i].style.background="aqua"
+    }
+}      
+    </script>
+</body>
+</html>

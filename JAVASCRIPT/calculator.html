@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Calculator</title>
+    <style>
+        .main{width: 400px;
+            border: 2px solid red;
+        padding: 30px ;
+        margin: 40px;
+    margin-inline: auto;
+        text-align: center;
+   }
+ 
+   
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>calculator</h1>
+        <label for="">Number1</label>
+        <input type="number" name="" id="input1">
+       
+        <button class="add" onclick="ADD()">+</button>
+        <button class="subs" onclick="SUB()">-</button>
+        <br>
+        <br>
+        <label for="">Number2</label>
+        <input type="number" id="input2">
+        <button onclick="MUL()">*</button>
+        <button onclick="DIV()">/</button>
+        <br><br>
+        <label for="">Results</label>
+        <input type="number" id="result">
+        <button onclick="CLS()">clear</button>
+         </div>
+         <script>
+            function ADD()
+            {
+                var x =document.getElementById("input1").value
+                var y =document.getElementById("input2").value
+              var  z =parseInt(x)+parseInt(y)
+              document.getElementById("result").value=z
+
+            }
+            ADD();//function call 
+            function CLS()
+            {
+                var x =document.getElementById("input1").value=null
+                var y =document.getElementById("input2").value=null
+                var z =parseInt(x)+parseInt(y)
+                 z =document.getElementById("result").value=null
+
+            }
+            CLS();//function call
+            function SUB()
+            {
+                var x =document.getElementById("input1").value
+                var y =document.getElementById("input2").value
+              var  z =parseInt(x)-parseInt(y)
+              document.getElementById("result").value=z
+
+            }
+            SUB()//FUNCTION CALL
+            function MUL()
+            {
+                var x =document.getElementById("input1").value
+                var y =document.getElementById("input2").value
+              var  z =parseInt(x)*parseInt(y)
+              document.getElementById("result").value=z
+            }
+            MUL()//function call
+            function DIV()
+            {
+                var x =document.getElementById("input1").value
+                var y =document.getElementById("input2").value
+              var  z =parseInt(x)/parseInt(y)
+              document.getElementById("result").value=z
+            }
+            DIV()//function call
+         </script>
+</body>
+</html>

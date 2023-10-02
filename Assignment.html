@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        #box {
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* space-around--for space everywhere ,space-evenly-->equal space all around,space-between-->only space in between */
+        /* float and flex property is used to get the output side by side */
+        #red {
+            background-color: red;
+            height: 100px;
+            width: 30%;
+            order: 2;
+        }
+
+        #green {
+            background-color: green;
+            height: 100px;
+            width: 30%;
+            order: 3;
+        }
+
+        #blue {
+            background-color: blue;
+            height: 100px;
+            width: 30%;
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="red"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+    </div>
+</body>
+
+</html>

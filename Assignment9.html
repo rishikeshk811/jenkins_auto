@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>two boxes with diff. color line by line</title>
+    <style>
+        #box {border: 2px dotted black;
+       overflow: auto;}
+       /* in css if we are using float property we will not get the border correctly ,so need to use overflow property */
+    #left {background-color: red;
+    height: 100px;
+width: 50%;
+float: left;
+}
+#right {background-color: green;
+height: 100px;
+width: 50%;
+float: right;}
+    </style>
+</head>
+<body>
+    <div id="box">
+<div id="left"></div>
+<div id="right"></div>
+    </div>
+</body>
+</html>

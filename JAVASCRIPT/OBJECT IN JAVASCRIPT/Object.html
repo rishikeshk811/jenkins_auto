@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person={
+            name :"Arun",
+            age:"23",
+            sal:"345789",
+            hobbies:["sports","dance","swim"],
+            add:{
+                state:"karnatka",
+                area:"Btmlayout",
+                city:"Banglore"
+            }
+        }
+        person.email="riya@gmail.com"
+        person.add.pincode=5789002
+        var result=JSON.stringify(person)
+ //this function convert literals data in JSON format.because we can store
+ //date in database only in JSON Format ,so any data need to convert in JSON 
+        // } bject creation by Literals Concept,later one is by JSON CONCEPT
+       
+        console.log(result)
+       
+        // WE Can also add a data in Object ONCE after Object Creation
+        // person.email="riya@gmail.com"
+        // person.add.pincode=5789002
+        // console.log(person.sal)
+        // console.log(person.hobbies[0])
+        // console.log(person.add.city)
+        //5000
+       
+        
+    </script>
+</body>
+</html>

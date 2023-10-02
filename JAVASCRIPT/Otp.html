@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate OTP</title>
+    <style>
+        .main{ background-color: rgba(137, 137, 194, 0.882);
+            border: 2px solid black;
+            width: 40%;
+         
+        padding: 40px;
+        margin-top: 30px;
+         margin-inline: auto;
+        text-align: center;}
+        .bottom{background-color: rgb(201, 94, 94);
+            width: 70%;
+        height: 30px;
+          margin-inline: auto;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <label for="">USERNAME </label>
+        <input type="text" name="" id="username">
+        <br><br>
+        <label for="">PASSWORD </label>
+        <input type="text" name="" id="password">
+        <br><br>
+        <button class="otp" onclick="OTP()">generate OTP</button> 
+        <br>
+       <div class="bottom"><h2 id="show-otp"></h2></div> 
+    </div>
+    <script>
+        function OTP()
+        {
+            var x = Math.random()*(9999-1000)+1000
+            var y =Math.floor(x)
+            var name=document.getElementById("username").value
+            document.getElementById("show-otp").innerHTML=("Dear "+name+" Your otp is "+y)
+        }
+        OTP()//function call
+    </script>
+</body>
+</html>
